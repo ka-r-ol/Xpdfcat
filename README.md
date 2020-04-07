@@ -1,5 +1,5 @@
 # Xpdfcat
-GUI PDF slice and merge tool 
+GUI PDF slice and merge tool  
 
 In GUI window You select PDF files and decide their sequence and pages to be included in the output merged PDF file.
 
