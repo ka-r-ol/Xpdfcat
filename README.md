@@ -12,8 +12,9 @@ GUI tool to merge and slice PDF files
 
     Components required in the enviroment:
     * python3
-    * tkinter python module
-    * PyPDF2 python module
+    with following modules:
+      * tkinter
+      * PyPDF2
 
 ## Install
 
