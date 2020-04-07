@@ -219,6 +219,7 @@ class XPDFConcat(tk.Frame):
         super().__init__(master)
         self.GT = []
         self.master = master
+        self.master.title("XPDFcat")
         self.topframe = tk.Frame(master)
         self.bottomframe = tk.Frame(master)
         self.topframe.pack(side="top", fill=tk.X)
