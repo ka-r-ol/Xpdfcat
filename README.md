@@ -9,8 +9,8 @@ In GUI window You select PDF files and decide their sequence and pages to be inc
 
 Components required in the enviroment:
 * python3
-    
-    with the following modules:
+
+with the following modules:
 * tkinter
 * PyPDF2
 
