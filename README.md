@@ -24,7 +24,7 @@ git clone https://github.com/ka-r-ol/Xpdfcat
 ```
 ### manually
 
-Download ![download] (Xpdfcat.pyw)
+Download ![download](Xpdfcat.pyw)
 
 # Usage
 
@@ -33,6 +33,6 @@ $ python3 Xpdfcat.pyw
 ```
 ![Main window](images/XPDFcat.png)
 
-# Architecture
+# Architecture (for python developers)
 
 ![Class Diagram](images/ClassDiagram.png)
