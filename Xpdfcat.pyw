@@ -10,9 +10,14 @@ import os
 import PyPDF2
 import webbrowser
 import re
-import tkinter as tk
-from tkinter.filedialog import askopenfilename, asksaveasfilename
-from tkinter import messagebox
+try:
+    import tkinter as tk
+    from tkinter.filedialog import askopenfilename, asksaveasfilename
+    from tkinter import messagebox
+except ImportError:
+    import Tkinter as tk
+    from Tkinter.Filedialog import askopenfilename, asksaveasfilename
+    from Tkinter import messagebox
 
 
 class PDFEntry(tk.Frame):
