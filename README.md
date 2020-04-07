@@ -18,16 +18,19 @@ GUI tool to merge and slice PDF files
 ## Install
 
 ### using git
-'''
+
+```
 git clone https://github.com/ka-r-ol/Xpdfcat
-'''
+```
 ### manually
-Download !download [Xpdfcat.pyw]
+
+Download ![download] (Xpdfcat.pyw)
 
 # Usage
-'''
+
+```
 $ python3 Xpdfcat.pyw
-'''
+```
 ![Main window](images/XPDFcat.png)
 
 # Architecture
