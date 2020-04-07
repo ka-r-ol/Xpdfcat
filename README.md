@@ -3,30 +3,26 @@ GUI PDF slice and merge tool
 
 In GUI window You select PDF files and decide their sequence and pages to be included in the output merged PDF file.
 
-# Content
-1. Installation
-2. Usage
-
 # Installation
 
 #### prerequesites
 
-    Components required in the enviroment:
+Components required in the enviroment:
     * python3
-    with following modules:
+    with the following modules:
       * tkinter
       * PyPDF2
 
-* _tested on Ubuntu, Mac, Windows 10_
-* _python2 not supported_
+ _tested on Ubuntu, Mac, Windows 10_
+
+ _python2 not supported_
 
 ##### using git
 
 ```
 $ git clone https://github.com/ka-r-ol/Xpdfcat
 ```
-Xpdfcat.pyw script is the only file needed and may be copied to any place
-on the local disk.
+Xpdfcat.pyw script is the only file needed and may be copied to any place on the local disk.
 
 ##### or install manually
 
@@ -65,10 +61,10 @@ In the application it will look like as follows:
 
 ![final setup](images/1.png)
 
-
-* First store the ![samples](documentation/samples)
- on local disk.
-* Then press **`Add PDF file`** button and select A.pdf.
+Steps:
+* Store the ![samples](documentation/samples)
+ on your local disk.
+* Press **`Add PDF file`** button and select A.pdf.
 
 * Repeat the action for the rest of the files: B.pdf, C.pdf and D.pdf
 
@@ -77,11 +73,11 @@ Expected output:
 ![all files selected](images/3.png)
 
 
-* Then press the **`Slice`** button by the first file:
+* Press the **`Slice`** button by the first file:
 
  ![slice](images/4.png)
 
-* ...and specify wich pages to be selected:
+* ...and specify which pages to be selected:
   * `\*` means all pages
   * `2-6` means pages 2,3,5 and 6
   * `1,1` means that the first page will be repeated twice
@@ -93,7 +89,7 @@ Expected output:
   * if **`Slice`** button is not selected by default all pages are included
   * slices to take effect needs to be **`Confirm!`ed**
 
-* Final step: press **`Merge`** button, select the name and location
+* Finally press **`Merge`** button, select the name and location
 of the output file
 
 * Enjoy the result!
