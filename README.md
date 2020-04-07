@@ -91,9 +91,9 @@ Expected output:
 * Repeat the slicing for all the files
 
   * if `Slice` button is not selected by default all pages are included
-  * slices to take effect needs to be `Confirm!`ed
+  * slices to take effect needs to be `**Confirm!**`ed
 
-* Final step: press `Merge` button, select the name and location
+* Final step: press `**Merge**` button, select the name and location
 of the output file
 
 * Enjoy the result!
