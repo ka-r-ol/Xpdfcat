@@ -59,7 +59,7 @@ the 5. page| = | the 1. page of the C.pdf
 the 6. page| = | again the 1. page of the C.pdf
 Pages from 7. to 55. of pages in D.pdf| = | all 48 pages of the D.pdf
 the page before the last one| = | the 1. page of the D.pdf
-the last page| = 1. page of the A.pdf
+the last page| = | 1. page of the A.pdf
 
 In the application it will look like as follows:
 
