@@ -55,8 +55,8 @@ Output file page number| is | composed of
 -----------------------|:-:|-----
 the 1. page| = | the 1. page of the A.pdf
 pages 2.,3. and 4.| = | pages 3., 4. and 5. of the B.pdf
-5. page| = | 1. page of the C.pdf
-6. page| = | again 1st page of the C.pdf
+the 5. page| = | the 1. page of the C.pdf
+the 6. page| = | again the 1. page of the C.pdf
 Pages from 7. to 55. of pages in D.pdf| = | all 48 pages of the D.pdf
 the page before the last one| = | the 1. page of the D.pdf
 the last page| = 1. page of the A.pdf
@@ -68,7 +68,7 @@ In the application it will look like as follows:
 
 * First store the ![samples](documentation/samples)
  on local disk.
-* Then press „Add PDF file” button and select A.pdf.
+* Then press #Add PDF file# button and select A.pdf.
 
 * Repeat the action for the rest of the files: B.pdf, C.pdf and D.pdf
 
@@ -77,7 +77,7 @@ Expected output:
 ![all files selected](images/3.png)
 
 
-* Then press the "Slice" button by the first file:
+* Then press the #Slice# button by the first file:
 
  ![slice](images/4.png)
 
@@ -90,10 +90,10 @@ Expected output:
 
 * Repeat the slicing for all the files
 
-  * if slice button is not selected by default all pages are included
-  * slices to take effect needs to be confirmed
+  * if #Slice# button is not selected by default all pages are included
+  * slices to take effect needs to be #Confirm!#ed
 
-* Final step: press ‘Merge’ button, select the name and location
+* Final step: press #Merge# button, select the name and location
 of the output file
 
 * Enjoy the result!
