@@ -18,14 +18,14 @@ Components required in the enviroment:
 
  _python2 not supported._
 
-##### Install using git
+##### Install using git:
 
 ```
 $ git clone https://github.com/ka-r-ol/Xpdfcat
 ```
 Xpdfcat.pyw script is the only file needed and may be copied to any place on the local disk.
 
-##### Or install manually
+##### Or install manually:
 
 Download Xpdfcat.pyw script ![download](Xpdfcat.pyw) and store it to local disk.
 
