@@ -10,22 +10,22 @@ In GUI window You select PDF files and decide their sequence and pages to be inc
 Components required in the enviroment:
 * python3
 
-with the following modules:
+...with the following modules:
 * tkinter
 * PyPDF2
 
- _tested on Ubuntu, Mac, Windows 10_
+ _tested on Ubuntu, Mac, Windows 10._
 
- _python2 not supported_
+ _python2 not supported._
 
-##### using git
+##### Install using git
 
 ```
 $ git clone https://github.com/ka-r-ol/Xpdfcat
 ```
 Xpdfcat.pyw script is the only file needed and may be copied to any place on the local disk.
 
-##### or install manually
+##### Or install manually
 
 Download Xpdfcat.pyw script ![download](Xpdfcat.pyw) and store it to local disk.
 
