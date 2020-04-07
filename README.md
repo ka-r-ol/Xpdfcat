@@ -8,10 +8,10 @@ In GUI window You select PDF files and decide their sequence and pages to be inc
 #### prerequesites
 
 Components required in the enviroment:
-    * python3
+* python3
     with the following modules:
-      * tkinter
-      * PyPDF2
+* tkinter
+* PyPDF2
 
  _tested on Ubuntu, Mac, Windows 10_
 
