@@ -68,7 +68,7 @@ In the application it will look like as follows:
 
 * First store the ![samples](documentation/samples)
  on local disk.
-* Then press `Add PDF file` button and select A.pdf.
+* Then press **`Add PDF file`** button and select A.pdf.
 
 * Repeat the action for the rest of the files: B.pdf, C.pdf and D.pdf
 
@@ -77,7 +77,7 @@ Expected output:
 ![all files selected](images/3.png)
 
 
-* Then press the `Slice` button by the first file:
+* Then press the **`Slice`** button by the first file:
 
  ![slice](images/4.png)
 
@@ -90,8 +90,8 @@ Expected output:
 
 * Repeat the slicing for all the files
 
-  * if `Slice` button is not selected by default all pages are included
-  * slices to take effect needs to be `Confirm!`ed
+  * if **`Slice`** button is not selected by default all pages are included
+  * slices to take effect needs to be **`Confirm!`ed**
 
 * Final step: press **`Merge`** button, select the name and location
 of the output file
