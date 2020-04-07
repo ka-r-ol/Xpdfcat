@@ -9,20 +9,25 @@ GUI tool to merge and slice PDF files
 # Installation
 
 ## prerequesites
-    Components to be installed in the enviroment:
+
+    Components required in the enviroment:
     * python3
     * tkinter python module
     * PyPDF2 python module
 
 ## Install
+
 ### using git
+...
 git clone https://github.com/ka-r-ol/Xpdfcat
+...
 ### manually
 download [Xpdfcat.pyw]
 
 # Usage
+...
 $ python3 Xpdfcat.pyw
-
+...
 ![Main window](images/XPDFcat.png)
 
 # Architecture
