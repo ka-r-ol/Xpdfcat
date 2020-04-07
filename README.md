@@ -38,10 +38,9 @@ Following window will appear:
 
 ![Main window](images/XPDFcat.png)
 
-Example: Merge and slice
+##### Example:
 The task is to select(slice) and merge pages from four PDF files:  
-A.pdf, B.pdf, C.pdf and D.pdf  
-
+`A.pdf`, `B.pdf`, `C.pdf` and `D.pdf`
 _(they can be found in
   ![samples subdir of documentation folder](documentation/samples))_
 
@@ -49,13 +48,13 @@ _(they can be found in
 
 Output file page number| is | composed of
 -----------------------|:-:|-----
-the 1. page| = | the 1. page of the A.pdf
-pages 2.,3. and 4.| = | pages 3., 4. and 5. of the B.pdf
-the 5. page| = | the 1. page of the C.pdf
-the 6. page| = | again the 1. page of the C.pdf
-Pages from 7. to 55. of pages in D.pdf| = | all 48 pages of the D.pdf
-the page before the last one| = | the 1. page of the D.pdf
-the last page| = | 1. page of the A.pdf
+the 1. page| = | the 1. page of the `A.pdf`
+pages 2.,3. and 4.| = | pages 3., 4. and 5. of the `B.pdf`
+the 5. page| = | the 1. page of the `C.pdf`
+the 6. page| = | again the 1. page of the `C.pdf`
+Pages from 7. to 55. of pages in `D.pdf`| = | all 48 pages of the `D.pdf`
+the page before the last one| = | the 1. page of the `D.pdf`
+the last page| = | 1. page of the `A.pdf`
 
 In the application it will look like as follows:
 
@@ -64,9 +63,9 @@ In the application it will look like as follows:
 Steps:
 * Store the ![samples](documentation/samples)
  on your local disk.
-* Press **`Add PDF file`** button and select A.pdf.
+* Press **`Add PDF file`** button and select `A.pdf`.
 
-* Repeat the action for the rest of the files: B.pdf, C.pdf and D.pdf
+* Repeat the action for the rest of the files: `B.pdf`, `C.pdf` and `D.pdf`
 
 Expected output:
 
