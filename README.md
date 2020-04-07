@@ -82,9 +82,9 @@ Expected output:
  ![slice](images/4.png)
 
 * ...and specify wich pages to be selected:
-  * '\*' means all files
-  * '2-6' means pages 2,3,5 and 6
-  * '1,1' means that the first page will be repeated twice
+  * `\*` means all pages
+  * `2-6` means pages 2,3,5 and 6
+  * `1,1` means that the first page will be repeated twice
   * selections should be separated by commas
   The outcome for the example looks as follows
 
