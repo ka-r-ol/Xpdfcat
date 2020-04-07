@@ -1,73 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
   <zoom_level>10</zoom_level>
   <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>660</x>
-      <y>200</y>
-      <w>210</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>_object: Class_
---
-id: Long="36548"
-[waiting for message]</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>240</x>
-      <y>210</y>
-      <w>170</w>
+      <x>320</x>
+      <y>250</y>
+      <w>130</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
-      <y>160</y>
-      <w>210</w>
-      <h>110</h>
+      <x>30</x>
+      <y>180</y>
+      <w>300</w>
+      <h>500</h>
     </coordinates>
-    <panel_attributes>_object: Class_
+    <panel_attributes>_class XPDFConcat(tk.Frame)_
 --
-id: Long="XXXX"
-[waiting for message]
++GT:[(PDFEntry objects)]
++master:tk.Frame
++topframe:tk.Frame
++bottomframe:tk.Frame
++output_pdf_trio:[(string)]
 --
-/
+def __init__(self, master=None, text="")
+def create_widgets(self):
+def button_add_clicked(self)
+def button_startover_clicked(self):
+def button_close_clicked(self):
+def button_merge_clicked(self):
+def concatenate_pdfs(self):
+
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>240</x>
-      <y>180</y>
-      <w>170</w>
-      <h>30</h>
+      <x>320</x>
+      <y>190</y>
+      <w>130</w>
+      <h>40</h>
     </coordinates>
-    <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;.
+(via GT table)</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>160</y>
-      <w>210</w>
-      <h>110</h>
+      <x>430</x>
+      <y>180</y>
+      <w>350</w>
+      <h>500</h>
     </coordinates>
-    <panel_attributes>_object: Class_
+    <panel_attributes>_class PDFEntry(tk.Frame):_
 --
-id: Long="36548"
-[waiting for message]
++GT:[(PDFEntry objects)]
++master:tk.Frame
++full_name:string
++dir_name:string
++fil_name:string
++frame:tk.Frame
++button_up:tk.Button 
++button_down:tk.Button
++filename_label:tk.StringVar()
++pdf_name_label:tk.Label
++button_del:tk.Button
++INACTIVE:int:1
++EDITABLE:int:2
++CONFIRMED:int:3
++slice_mode:int
++slice_text:string
++sliced:[(string)]
++button_slice_label:tk.StringVar
++button_slice:tk.Button,
++slice_entry:tk.Entry
 --
-/
+__init__(self, full_name, GT, master=None)
+swap_entries(self, idx1, idx2)
+up_clicked(self)
+down_clicked(self)
+set_slice_mode(self, mode, text, sliced)
+convert(self, tmp_sliced)
+slice_clicked(self)
+del_clicked(self)
+destroy(self)
+
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>0</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>halign=center
+Xpdfcat class diagram</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>60</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>tkinter.Frame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>130</x>
+      <y>80</y>
+      <w>140</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>80</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;100.0</additional_attributes>
   </element>
 </diagram>

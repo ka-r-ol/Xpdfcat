@@ -2,7 +2,8 @@
 " GUI (tkinter) Tool to concatenate multiple pdf files
 " Language:     Python
 " Maintainer:   Karol Lemanski <karol.lemanski@wp.pl>
-" Version:      python3
+" Version:      1.00 (2020-04-07)
+" Dependiecies: python3 + tkinter + PyPDF2
 " URL:          http://github.com/ka-r-ol/Xpdfcat
 """
 
@@ -10,19 +11,20 @@ import os
 import PyPDF2
 import webbrowser
 import re
-try:
-    import tkinter as tk
-    from tkinter.filedialog import askopenfilename, asksaveasfilename
-    from tkinter import messagebox
-except ImportError:
-    import Tkinter as tk
-    from Tkinter.Filedialog import askopenfilename, asksaveasfilename
-    from Tkinter import messagebox
+import tkinter as tk
+from tkinter.filedialog import askopenfilename, asksaveasfilename
+from tkinter import messagebox
 
 
 class PDFEntry(tk.Frame):
+    """
+    Defines subframe with up,down buttons,
+                          slice inputbox,
+                          slice/confirm and del buttons
+    """
     def __init__(self, full_name, GT, master=None):
         super().__init__(master)
+        # GT - table with PDFEntry objects to assure two way communication
         self.GT = GT
         self.master = master
         self.full_name = full_name
@@ -40,6 +42,7 @@ class PDFEntry(tk.Frame):
         self.button_down.pack(side="left")
 
         self.filename_label = tk.StringVar()
+        # StringVar type allows to change the label name
         self.filename_label.set(fil_name)
         self.pdf_name_label = tk.Label(self.frame,
                                        textvariable=self.filename_label)
@@ -65,6 +68,9 @@ class PDFEntry(tk.Frame):
         self.slice_entry = tk.Entry(self.frame, width=20)
 
     def swap_entries(self, idx1, idx2):
+        """ Swaps widget parameters between GT[idx1] and GT[idx2] entries
+            Used by "up" and "down" buttons
+        """
         # name of the file label
         o1_value = self.GT[idx1].filename_label.get()
         o2_value = self.GT[idx2].filename_label.get()
@@ -101,6 +107,11 @@ class PDFEntry(tk.Frame):
         self.swap_entries(idx, idx2)
 
     def set_slice_mode(self, mode, text, sliced):
+        """ Enforces slice state according to mode
+            (INACTIVE,CONFIRMED,INACTIVE) and inputbox text
+            and parsed text (stored in sliced)
+            Used by UP and DOWN buttons
+        """
         if mode == self.INACTIVE:
             self.button_slice_label.set("Slice")
             self.slice_text = "*"
@@ -130,6 +141,9 @@ class PDFEntry(tk.Frame):
             self.slice_mode = self.CONFIRMED
 
     def convert(self, tmp_sliced):
+        """ Parses content of slice input box into python range
+            from user "*,2-3,1" -> python [":","1:4","0"]
+        """
         sliced = []
         if len(tmp_sliced) == 0:
             sliced = [":"]
@@ -154,6 +168,9 @@ class PDFEntry(tk.Frame):
 
     def slice_clicked(self):
         def analize_text(entry_text):
+            # verifies if slice input box is ok
+            # if ok, then parses the content with convert function
+            # if not ok, returns false flag
             entry_text = entry_text.replace(" ", "")
 
             flag = False
@@ -220,8 +237,17 @@ class PDFEntry(tk.Frame):
 
 
 class XPDFConcat(tk.Frame):
+    """
+    Defines the main app window with buttons:
+                          - Add PDF file,
+                          - Merge
+                          - Del all
+                          - Close
+                          + GT table with PDFEntry subframes
+    """
     def __init__(self, master=None, text=""):
         super().__init__(master)
+        # GT - table with PDFEntry objects to assure two way communication
         self.GT = []
         self.master = master
         self.master.title("XPDFcat")
@@ -230,7 +256,6 @@ class XPDFConcat(tk.Frame):
         self.topframe.pack(side="top", fill=tk.X)
         self.bottomframe.pack(side="bottom")
         self.create_widgets()
-        self.GT = []
         self.output_pdf_trio = []
 
     def create_widgets(self):
@@ -260,6 +285,7 @@ class XPDFConcat(tk.Frame):
         if len(full_name) != 0:
             w = PDFEntry(full_name, self.GT, self.topframe)
             w.pack(side="top", fill=tk.X)
+            # when new pdf is added it's info is stored in GT table
             self.GT.append(w)
 
     def button_startover_clicked(self):
@@ -285,16 +311,9 @@ class XPDFConcat(tk.Frame):
             return
 
         all_slices_confirmed = True
-        """
-        self.INACTIVE = 1
-        self.EDITABLE = 2
-        self.CONFIRMED =3
-        self.slice_mode = self.INACTIVE
-        """
         for w in self.GT:
             if w.slice_mode == w.EDITABLE:
                 all_slices_confirmed = False
-                # break
 
         if all_slices_confirmed is False:
             messagebox.showinfo(title="Not all slices are confirmed!",
@@ -320,7 +339,7 @@ Confirm missing slices!
             webbrowser.open('file://'+full_name, new=2)
 
     def concatenate_pdfs(self):
-
+        # function invoked by button_merge_clicked()
         output = open(self.output_pdf_trio[2], "wb")
         in_fs = []
         merger = PyPDF2.PdfFileMerger()
@@ -338,6 +357,8 @@ Confirm missing slices!
             f.close()
 
 
+""" MAIN BLOCK
+"""
 if __name__ == "__main__":
     root = tk.Tk()
     app = XPDFConcat(master=root)
