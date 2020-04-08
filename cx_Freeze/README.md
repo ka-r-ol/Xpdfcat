@@ -21,6 +21,11 @@ python setup.py bdist_msi
 
 The `Xpdfcat-win10-1.00-amd64.msi` is available in `..\freeze\dist` subdirectory.
 
+Windoes 10 amd64 version of the package may be downloaded from 
+![here]( https://drive.google.com/open?id=1LbVvLUROsfy1syjHRIni-RtGh7cvEd8w)
+sha256sum: `c633c659404b7122d9ab8b880e937bafcf6b3b5a7b82d31083878889ae41dd8a`
+
+
 ## Remarks:
 
 * If you prefer 'exe' version instead of 'msi' use following command
@@ -28,6 +33,6 @@ The `Xpdfcat-win10-1.00-amd64.msi` is available in `..\freeze\dist` subdirectory
 ```
 python setup.py bdist_msi
 ```
-
-\*\* Gratitude for sentdex for ![https://youtu.be/HosXxXE24hA](https://youtu.be/HosXxXE24hA)
+#
+> \*\* Gratitude for sentdex for ![https://youtu.be/HosXxXE24hA](https://youtu.be/HosXxXE24hA)
 \*\* Gratitude for Cimballi for ![https://stackoverflow.com/a/15736406](https://stackoverflow.com/a/15736406)
