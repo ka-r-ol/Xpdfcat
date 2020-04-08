@@ -35,6 +35,6 @@ sha256sum: `c633c659404b7122d9ab8b880e937bafcf6b3b5a7b82d31083878889ae41dd8a`
 python setup.py bdist_msi
 ```
 #
-> \*\* Gratitude for sentdex for ![https://youtu.be/HosXxXE24hA](https://youtu.be/HosXxXE24hA)
+> \*\* Gratitude for sentdex for [https://youtu.be/HosXxXE24hA](https://youtu.be/HosXxXE24hA)
 
-> \*\* Gratitude for Cimballi for ![https://stackoverflow.com/a/15736406](https://stackoverflow.com/a/15736406)
+> \*\* Gratitude for Cimballi for [https://stackoverflow.com/a/15736406](https://stackoverflow.com/a/15736406)
