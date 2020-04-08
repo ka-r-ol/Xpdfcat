@@ -35,8 +35,8 @@ Windows 10 users (amd64) may installation package that would run without python 
 
 Platform | Filename | sha256sum
 -|-|-
-win10 amd64|![Xpdfcat-win10-1.00-amd64.msi]( https://drive.google.com/open?id=1LbVvLUROsfy1syjHRIni-RtGh7cvEd8w) |`c633c659404b7122d9ab8b880e937bafcf6b3b5a7b82d31083878889ae41dd8a`
-win10 intel64|![Xpdfcat-win10-1.00-win32.msi](https://drive.google.com/open?id=1n18ZqQR-yl7gZNJaeOpzqpNs8fMmEraT)|`140b9b3cfb8eeecc04294f632900bd11865110b0fd795812655461d27eff38f3`
+win10 amd64|[Xpdfcat-win10-1.00-amd64.msi]( https://drive.google.com/open?id=1LbVvLUROsfy1syjHRIni-RtGh7cvEd8w) |`c633c659404b7122d9ab8b880e937bafcf6b3b5a7b82d31083878889ae41dd8a`
+win10 intel64|[Xpdfcat-win10-1.00-win32.msi](https://drive.google.com/open?id=1n18ZqQR-yl7gZNJaeOpzqpNs8fMmEraT)|`140b9b3cfb8eeecc04294f632900bd11865110b0fd795812655461d27eff38f3`
 
 
 (technical details on compiling Xpdfcat.pyw to .msi package are available in ![cx_Freeze](cx_Freeze) subdirectory)
