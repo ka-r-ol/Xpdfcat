@@ -29,12 +29,24 @@ Xpdfcat.pyw script is the only file needed and may be copied to any place on the
 
 Download Xpdfcat.pyw script ![download](Xpdfcat.pyw) and store it to local disk.
 
+##### alternatively download and install msi package (windows users only)
+
+Windows 10 users (amd64) may download and install compiled installation version: Xpdfcat-win10-1.00-amd64.msi from 
+![here]( https://drive.google.com/open?id=1LbVvLUROsfy1syjHRIni-RtGh7cvEd8w)
+
+sha256sum: `c633c659404b7122d9ab8b880e937bafcf6b3b5a7b82d31083878889ae41dd8a`
+
+(technical details on compiling Xpdfcat.pyw to .msi package are available in ![cx_Freeze](cx_Freeze) subdirectory)
+
+
 # Usage
 
 To start the program run:
 ```
 $ python3 Xpdfcat.pyw
 ```
+(or click the Xpdfcat icon on the windows desktop if installed alternatively from the .msi package) 
+
 Following window will appear:
 
 ![Main window](images/XPDFcat.png)
