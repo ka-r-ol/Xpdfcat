@@ -3,7 +3,7 @@
 " GUI (tkinter) Tool to concatenate multiple pdf files
 " Language:     Python
 " Maintainer:   Karol Lemanski <karol.lemanski@wp.pl>
-" Version:      1.00 (2020-04-07)
+" Version:      1.00 (2020-04-15)
 " Dependiecies: python3 + tkinter + PyPDF2
 " URL:          http://github.com/ka-r-ol/Xpdfcat
 """
