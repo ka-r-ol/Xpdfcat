@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 " GUI (tkinter) Tool to concatenate multiple pdf files
 " Language:     Python
