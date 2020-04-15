@@ -4,7 +4,7 @@
 " Language:     Python
 " Maintainer:   Karol Lemanski <karol.lemanski@wp.pl>
 " Version:      1.00 (2020-04-15)
-" Dependiecies: python3 + tkinter + PyPDF2
+" Dependencies: python3 + tkinter + PyPDF2
 " URL:          http://github.com/ka-r-ol/Xpdfcat
 """
 
